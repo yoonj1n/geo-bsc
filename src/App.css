@@ -1,0 +1,79 @@
+.App {
+    font-size: 62.5%;
+}
+
+/* font */
+@font-face {
+    font-family: "Basic";
+    src: url(./fonts/NanumSquareR.ttf);
+}
+
+@font-face {
+    font-family: "BasicB";
+    src: url(./fonts/NanumSquareB.ttf);
+}
+
+@font-face {
+    font-family: "BasicEB";
+    src: url(./fonts/NanumSquareEB.ttf);
+}
+
+/* under page css */
+.under-right{
+    width: 100%;
+    height: calc(100vh - 3rem);
+    font-family: "Basic";
+    display: flex;
+    background-color: #f9fafc;
+}
+
+/* map css */
+.Mapcontainers{
+    height: 100%;
+    width: 100%;
+}
+
+/* Controller Layer css */
+.Controller{
+    position:absolute !important;
+    top:1rem;
+    right: 1rem !important;
+    z-index: 1000;
+    /* height: 20rem; */
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.Controller_D{
+    display: flex;
+    flex-direction: column;
+}
+
+.ControllerT{
+    font-family: "BasicEB" !important;
+    font-size: 0.9rem !important;
+}
+
+.ControllerD{
+    font-family: "BasicB" !important;
+    font-size: 0.8rem !important;
+}
+
+.ControllerSWrapper{
+    margin-bottom: 1rem !important;
+}
+
+.ControllerS{
+    font-family: "BasicB" !important;
+    font-size: 0.8rem !important;
+    max-height: 2rem;
+}
+
+.ControllerL_M{
+    font-family: "Basic" !important;
+    font-size: 0.8rem !important;
+}
+
+.MuiPopover-paper{
+    max-height: 10rem !important;
+}
