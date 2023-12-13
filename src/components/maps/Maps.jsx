@@ -33,9 +33,9 @@ export default function Maps(){
     // data name (TODO : Change)
     const [DataName, setDataName] = useState("west");
     // U,V Speed tiff file path
-    const [DataSpeedUrl, setDataSpeedUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/wind_speed.tif");
+    const [DataSpeedUrl, setDataSpeedUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_speed.tif");
     // U,V Direction tiff file path
-    const [DataDirectionUrl, setDataDirectionUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/wind_direction8.tif");    
+    const [DataDirectionUrl, setDataDirectionUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_direction8.tif");    
     
     // Speed tiff option
     const [DataSpeedOptions, setDSOptions] = useState({
@@ -65,11 +65,11 @@ export default function Maps(){
     const DataHandler = (e)=>{
         setDataName(e.target.value);
         if(e.target.value === 'south'){
-            setDataSpeedUrl("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/south_20220523_speed.tif");
-            setDataDirectionUrl("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/south_20220523_dir1.tif");
+            setDataSpeedUrl("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/south_20220523_speed.tif");
+            setDataDirectionUrl("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/south_20220523_dir1.tif");
         }else{
-            setDataSpeedUrl("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/wind_speed.tif");
-            setDataDirectionUrl("https://raw.githubusercontent.com/yoonj1n/geo-modelweb/main/Tools/wind_direction8.tif");
+            setDataSpeedUrl("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_speed.tif");
+            setDataDirectionUrl("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_direction8.tif");
         }
     }
     const RLayerHandler = (e) => setRasterLayer(e.target.checked);
