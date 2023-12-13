@@ -35,7 +35,7 @@ export default function Maps(){
     // U,V Speed tiff file path
     const [DataSpeedUrl, setDataSpeedUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_speed.tif");
     // U,V Direction tiff file path
-    const [DataDirectionUrl, setDataDirectionUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_direction8.tif");    
+    const [DataDirectionUrl, setDataDirectionUrl] = useState("https://raw.githubusercontent.com/yoonj1n/geo-bsc/main/Tools/wind_direction1.tif");    
     
     // Speed tiff option
     const [DataSpeedOptions, setDSOptions] = useState({
